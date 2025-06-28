@@ -11,8 +11,8 @@ const EditUser = () => {
   let param = useParams();
   console.log(param);
   let { id } = useParams();
-  let url = `${import.meta.env.VITE_API_URL}/api/users/${id}`;
-  let updateUrl = `${import.meta.env.VITE_API_URL}/api/users/${id}`;
+  let url = `${import.meta.env.VITE_API_URL}/api/users${id}`;
+  let updateUrl = `http://localhost:8080/api/users/${id}`;
   async function getUserDetails(url) {
     try {
       let res = await fetch(url, {

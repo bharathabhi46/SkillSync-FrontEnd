@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./CreateUser.css";
 const CreateUser = () => {
-  let url = `${import.meta.env.VITE_API_URL}/api/users`;
+  let url = "https://skillsync-backend.up.railway.app/api/users";
   let [formData, setFormData] = useState({
     name: "",
     email: "",
